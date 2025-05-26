@@ -1,0 +1,1289 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+
+
+/* HOME HTML CSS */
+
+/* Navbar */
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: #ff0000; */
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    /* border: solid white; */
+}
+
+.menu_bar{
+    height: 25px;
+    width: 25px;
+    /* border: solid; */
+    margin-left: 15px;
+    /* position: absolute; */
+    /* left: 20px; */
+}
+
+.three_dash{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    height: 25px;
+    width: 35px;
+    /* border: solid white; */
+    /* margin-left: -10px; */
+    /* background-color: white; */
+    margin-left: 25px;
+    display: flex;
+}
+
+.logo img{
+    height:100%;
+    width: 100%;
+}
+
+.logo span{
+    margin-left: 5px;
+    /* border: solid white; */
+    font-size: 23px;
+    padding: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: monospace;
+    width: 120px;
+    height: 30px;
+}
+
+.search-bar {
+    width: 35%;
+    padding: 10px 15px;
+    margin-left: 350px;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 17px;
+    border-right: none;
+}
+
+.search_icon{
+    width: 4%;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color:#242124 ;
+    border: 1px solid gray;
+    border-left: none;
+}
+
+.search_icon:hover{
+    cursor: pointer;
+}
+
+.search_icon i{
+    margin-left: 15px;
+    margin-top: 9px;
+}
+
+.mic{
+    width: 40px;
+    height: 40px;
+    background-color:#242124 ;
+    border-radius: 50%;
+    margin-left: 1%;
+
+}
+
+.mic:hover{
+    cursor: pointer;
+    background-color: #3c3333;
+}
+
+.mic i{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.create{
+    height: 35px;
+    width: 100px;
+    background-color:#242124;
+    font-size: 17px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+    margin-left: 13%;
+}
+
+.create:hover{
+    cursor: pointer;
+    background-color: #3c3333;
+}
+
+.bell{
+    height: 30px;
+    width: 30px;
+    /* border: 1px solid white; */
+    margin-left: 1%;
+}
+
+.bell img{
+    height: 100%;
+    width: 100%;
+}
+
+.profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    padding-left: 5px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    margin-left: 1%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: fixed;
+    /* height: 100%; */
+    top: 70px;
+    bottom: 0;
+    overflow-y: auto;
+    background-color: black;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover{
+    background-color: #3c3333;
+}
+
+.sidebar_last{
+    font-size: 13px;
+}
+
+.list_last{
+    font-size: 11px;
+}
+
+
+/* Main Content */
+.content {
+    margin-top: 50px;
+    margin-left: 260px;
+    padding: 10px;
+    /* background-color: black;
+    color: white; */
+}
+
+.video-grid {
+    display: flex;
+    column-gap: 40px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 370px;
+    /* border: solid; */
+}
+
+.video_thumbnail {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    transition: transform 0.3s linear;
+}
+
+.video:hover .video_thumbnail {
+    transform: scale(1.1);
+}
+
+.video_title{
+    display: flex;
+    margin-top: 8px;
+    /* border: solid; */
+}
+
+.musiclogo{
+    width: 35px;
+    height: 35px;
+    border: solid;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.musiclogo img{
+    height: 100%;
+    width: 100%;
+}
+
+.musiclogo_content{
+    margin-left: 10px;
+}
+
+.musiclogo_content a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Design */
+
+/* For small screens */
+@media screen and (max-width: 600px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+    
+    .search-bar {
+        display: none;
+    }
+
+    .mic {
+        margin-left: 40px;
+    }
+
+    .search_icon{
+        background-color: black;
+        border: solid black;
+        margin-left: 130px;
+    }
+    
+    .create{
+        display: none;
+    }
+
+    .bell, .profile{
+        margin-left: 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-top: 50px;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .video-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        gap: 10px;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
+
+/* For tabs */
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+    
+    .navbar {
+        padding: 10px;
+        height: auto;
+    }
+
+    .search-bar {
+        width: 35%;
+        padding: 10px;
+        margin-left: 170px;
+    }
+    
+    .search_icon i{
+        margin-left: 9px;
+        margin-top: 9px;
+    }
+    
+    .mic{
+        margin-left: 20px;
+    
+    }
+
+    .mic i{
+        margin-left: 12px;
+    }
+    
+    .create{
+        margin-left: 90px;
+    }
+
+    .content {
+        margin-top: 60px;
+        margin-left: 250px;
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two videos per row */
+    }
+}
+
+/* For laps and desktops */
+@media screen and (min-width: 1301px) {
+    .video-grid {
+        grid-template-columns: repeat(3, 1fr);  /* Three videos per row */
+}
+}
+
+
+
+
+
+/* SEARCH HTML CSS */
+
+.search-results {
+    margin: 20px;
+    margin-top: 70px;
+    margin-left: 260px;
+}
+
+.search-results h2 {
+    margin-bottom: 20px;
+}
+
+.result {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.result:hover {
+    background: #3c3333;
+    cursor: pointer;
+}
+
+.result img {
+    width: 500px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.result-info h3 {
+    margin: 5px 0;
+}
+
+.animelogo{
+    display: flex;
+    margin-top: 5px;
+    /* border: solid; */
+}
+
+.animelogo img{
+    margin-top: 7px;
+}
+
+.result-info img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.result-info .description {
+    color: gray;
+    font-size: 14px;
+}
+
+/* loading animation */
+.load {
+    width: 30px;
+    height: 30px;
+    border: 5px solid lightgray;
+    border-top: 5px solid #242124;
+    border-radius: 50%;
+    margin: 40px auto;
+    animation: spin 1s ease-in infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Responsive Design */
+
+/* For small screens */
+@media screen and (max-width: 600px) {
+    .search-results {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .result {
+        flex-direction: column;
+    }
+
+    .result img {
+        width: 100%;
+        height: auto;
+    }
+
+    .animelogo img{
+        width: 7%;
+        height: 30px;
+    }
+
+    .result-info {
+        margin-top: 10px;
+    }
+
+    .load{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+/* For tabs */
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+
+    .search-results {
+        margin-left: 240px;
+    }
+
+    .result img {
+        width: 350px;
+    }
+
+    .animelogo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    h2{
+        margin-left: 20px;
+    }
+}
+
+
+
+
+/* WATCH HTML CSS */
+
+.video-container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Video Player */
+.video-player {
+    width: 70%;
+    padding-right: 20px;
+    margin-top: 80px;
+}
+
+.video_div video {
+    width: 100%;
+    /* z-index: -1; */
+    height: 460px;
+    border-radius: 15px;
+    /* position: absolute; */
+}
+
+.video_div{
+    /* border: solid white; */
+    /* position: relative; */
+    width: 100%;
+    height: 460px;
+    /* z-index: -1; */
+    border-radius: 15px;
+}
+
+.vtvlogo{
+    width: 35px;
+    height: 35px;
+    border: solid;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.vtvlogo img{
+    height: 100%;
+    width: 100%;
+}
+
+.vtvlogo_content{
+    margin-left: 10px;
+}
+
+.video_para{
+    font-size: 13px;
+    margin-top: 0px;
+    color: dimgray;
+
+}
+
+.video-actions .common_btn {
+    background-color: #242124;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe{
+    margin-right: 200px;
+    background-color: #242124;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three_dot{
+    height: 40px;
+    width: 40px;
+    background-color: #242124;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.video-actions button:hover{
+    background-color: dimgray;
+}
+
+/* Comments */
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    /* background: #f4f4f4; */
+    color: white;
+    /* padding: 10px; */
+    margin: 5px 0;
+    border-radius: 5px;
+    /* height: 80px; */
+}
+
+.comment_profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    padding-left: 10px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.profile_content{
+    margin-left: 10px;
+}
+
+.profile_content h4{
+    margin-bottom: 0;
+}
+
+.comment-box {
+    width: 98%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #3c3333;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Related Videos */
+.related-videos {
+    width: 30%;
+    margin-top: 70px;
+}
+
+.related-video {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+}
+
+.related-video:hover{
+    border-radius: 10px;
+    background: #3c3333;
+}
+
+.related-video img {
+    width: 150px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Responsive Design */
+
+/* For small screens */
+@media screen and (max-width: 600px) {
+
+    .video-player {
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .video_div video {
+        width: 100%;
+        height: 360px;
+        border-radius: 15px;
+    }
+    
+    .video_div{
+        width: 100%;
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    .video-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video_div{
+        width: 100%;
+    }
+
+    .video_div video{
+        width: 100%;
+    }
+
+    .video-actions{
+        width: 100%;
+    }
+    
+    .vtvlogo{
+        margin-top: 20px;
+    } 
+    
+    .video-actions .common_btn, .three_dot {
+        display: none;
+    }
+
+    .subscribe{
+        margin-right: 0px;
+        margin-left: 150px;
+        height: 30px;
+        width: 80px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .comments{
+        width: 100%;
+    }
+    
+    .comment {
+        font-size: 13px;
+    }
+    
+    .comment_profile{
+        padding-left: 11px;
+        padding-top: 10px;
+    }
+    
+    .profile_content{
+        margin-left: 10px;
+    }
+
+.related-videos {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.related-video img {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.related-video h4 {
+    font-size: 14px;
+}
+}
+
+
+/* For tabs */
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+
+.video-player{
+        margin-top: 0px;
+}
+ 
+.video-actions{
+    width: 100%;
+}
+
+.video-player h2{
+    margin-top: 0px;
+}
+
+.vtvlogo{
+    margin-top: 25px;
+}
+
+.vtvlogo_content{
+    margin-left: 20px;
+}
+
+.video-actions .common_btn {
+    height: 30px;
+    width: 90px;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.subscribe{
+    margin-right: 0px;
+    height: 30px;
+    width: 90px;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.three_dot{
+    display: none;
+}
+
+.related-videos {
+    margin-top: 50px;
+}
+
+.related-video {
+    margin-bottom: 0px;
+}
+
+.related-video img {
+    width: 150px;
+    height: auto;
+}
+}
+
+
+
+
+
+
+/* CHANNEL HTML CSS */
+
+/* Channel Header */
+.channel-header {
+    width: 75%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    margin-top: 90px;
+    margin-left: 300px;
+    border: solid #242124;
+    border-radius: 10px;
+}
+
+.banner {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 320px;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    width: 75%;
+}
+
+.profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid gray;
+    margin-bottom: 20px;
+}
+
+.subscribe-btn {
+    background-color: #242124;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    /* transition: transform 0.2s ease-in-out; */
+}
+
+.subscribe-btn:hover {
+    background-color: darkred;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Video Grid */
+.channel-content {
+    padding: 20px;
+    margin-left: 300px;
+    width: 75%;
+}
+
+.video-grid2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+    
+}
+
+.video_channel {
+    width: 265px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.video_channel p:hover{
+    color: dimgray;
+}
+
+.video_channel h4:hover{
+    color: dimgray;
+}
+
+.video_channel img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Responsive Design */
+
+/* For small screens */
+@media screen and (max-width: 600px) {
+
+    .channel-content h2{
+        margin-top: 40px;
+    }
+
+    .channel-header,
+    .channel-info {
+        width: 95%;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .channel-content{
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .profile-pic {
+        width: 80px;
+    }
+
+    .subscribe-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+        width: 80%;
+    }
+
+    .video-grid2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .video_channel {
+        width: 45%;
+    }
+
+}
+
+/* For tabs */
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+
+    .channel-header, .channel-info, .channel-content {
+        width: 70%;
+        margin-left: 270px;
+    }
+
+    .channel-content h2{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    .video_channel {
+        width: 45%;
+    }
+
+    .subscribe-btn{
+        width: 90%;
+    }
+}
+
+
+
+
+/* PREMIUM HTML CSS */
+
+
+/* main premium */
+.main_premium{
+    width: 100%;
+    /* background: linear-gradient(to top,#08457e,#545aa7,#8cbed6); */
+    background: linear-gradient(to top,black,#08457e,#483d8b );
+    margin-top: 70px;
+    text-align: center;
+}
+
+.premium_logo{
+    display: flex;
+    /* border: solid white; */
+    align-items: center;
+    justify-content: center;
+}
+
+.premium_logo img{
+    height:40px;
+    width: 60px;
+    margin-top: 95px;
+}
+
+.premium_logo h2{
+    letter-spacing: 1px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 120px;
+}
+
+.main_premium h1{
+    font-size: 55px;
+}
+
+.main_premium h3{
+    margin-top: 30px;
+}
+
+.main_premium h6{
+    /* margin-top: 50px; */
+    color: #0fc0fc ;
+}
+
+.main_premium button{
+    all: unset;
+    color: black;
+    background-color: #21abcd;
+    height: 30px;
+    width: 180px;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.main_premium button:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+/* premium animated gif */
+
+.premium_gif{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.premium_gif1, .premium_gif2, .premium_gif3, .premium_gif4{
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.premium_gif1 p{
+    margin-top: 40px;
+}
+
+.premium_gif2 p{
+    margin-top: 38px;
+}
+
+.premium_gif3 p{
+    margin-top: 40px;
+}
+
+.premium_gif4 p{
+    margin-top: 43px;
+}
+
+.premium_gif img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.premium_gif1 img{
+    height: 74px;
+    margin-top: 40px;
+}
+
+.premium_gif2 img{
+    height: 84.5px; 
+    margin-top: 40px;  
+}
+
+.premium_gif3 img{
+    height: 127.5px;
+}
+
+.premium_gif4 img{
+    height: 84px;
+    margin-top: 40px;
+}
+
+/* subscription plans heading */
+.subscription_heading{
+    font-size: 55px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* memebrship-box */
+.membership_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.memebership_box_content{
+    width: 350px;
+    padding: 20px;
+    background-color: #242124;
+    border-radius: 20px;
+}
+
+.memebership_box_content:hover{
+    background-color: #3c3333;
+    cursor: pointer;
+}
+
+.membership_box button{
+    all: unset;
+    color: black;
+    background-color: #21abcd;
+    height: 30px;
+    width: 95%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.membership_box button:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.last_heading{
+    font-size: 55px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+
+/* Responsive Design */
+
+/* For small screens */
+@media screen and (max-width: 600px) {
+
+    .main_premium h1 {
+        font-size: 30px;
+    }
+
+    .main_premium h3 {
+        font-size:20px;
+        font-weight: normal;
+    }
+
+    .premium_logo{
+        margin-top: 0px;
+    }
+
+    .premium_logo img{
+        margin-top: 30px;
+    }
+
+    .premium_logo h2{
+        margin-top: 60px;
+    }
+
+    .main_premium h1, h3, button, h6{
+        margin-top: 25px;
+    }
+
+    .main_premium button{
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .premium_gif{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .subscription_heading {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .membership_box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .memebership_box_content {
+        width: 70%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .last_heading {
+        font-size: 35px;
+    }
+}
+
+/* For tabs */
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+
+    .premium_logo{
+        margin-top: 0px;
+    }
+
+    .premium_logo img{
+        margin-top: 30px;
+    }
+
+    .premium_logo h2{
+        margin-top: 60px;
+    }
+
+    .main_premium h1 {
+        font-size: 45px;
+    }
+
+    .main_premium button{
+        margin-top: 20px;
+    }
+
+    .premium_gif {
+        margin-top: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .premium_gif1, .premium_gif2, .premium_gif3, .premium_gif4 {
+        width: 40%;
+        height: auto;
+    }
+
+    .subscription_heading{
+        margin-top: 100px;
+    }
+    .membership_box {
+        margin-top: 0;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+    .memebership_box_content {
+        width: 250px;
+    }
+
+    .last_heading{
+        font-size: 45px;
+    }
+
+}
